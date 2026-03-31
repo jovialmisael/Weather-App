@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fall-rain {
+  0% { transform: translateY(-10vh) translateZ(0); }
+  100% { transform: translateY(110vh) translateZ(0); }
+}
+
+@keyframes fall-snow {
+  0% { transform: translateY(-10vh) translateX(0) translateZ(0); }
+  50% { transform: translateY(50vh) translateX(25px) translateZ(0); }
+  100% { transform: translateY(110vh) translateX(-25px) translateZ(0); }
+}
