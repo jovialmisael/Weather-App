@@ -3,7 +3,7 @@ import { useState, useCallback, useEffect } from 'react';
 // ==========================================
 // PASTE YOUR WEATHERAPI.COM API KEY BELOW
 // ==========================================
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY || "7f4b7d094718498f87385624263103";
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY || "";
 
 const BASE_URL = 'https://api.weatherapi.com/v1';
 
